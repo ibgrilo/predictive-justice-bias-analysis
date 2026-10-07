@@ -23,7 +23,7 @@ src/                    código reutilizável (filtros, treino, métricas)
 ## Como rodar
 
 ```bash
-git clone --recurse-submodules <url-do-repo>
+git clone --recurse-submodules https://github.com/ibgrilo/predictive-justice-bias-analysis.git
 pip install -r requirements.txt
 ```
 
