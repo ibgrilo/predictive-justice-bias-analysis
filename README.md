@@ -2,8 +2,7 @@
 
 **Cenário 5: Avaliação de Risco e Segurança Pública (COMPAS)**
 
-Estudo de caso em Python: sub-representar intencionalmente um grupo étnico/racial no conjunto de
-treinamento do COMPAS (ProPublica) e mostrar como isso gera taxas de erro díspares entre os grupos.
+Estudo de caso em Python: subrepresentar de propósito um grupo étnico/racial no treino do COMPAS (ProPublica) e mostrar como isso gera taxas de erro diferentes entre os grupos.
 
 ## Abrir no Colab
 
@@ -19,7 +18,7 @@ Cada linha é um caso (modelo, uso de `race`, método de amostragem), com 30 sem
 
 - Subrepresentar o grupo por **sorteio** muda os dois grupos juntos, e a diferença entre eles fica dentro do ruído entre sementes.
 - A disparidade aparece com **amostragem seletiva** (por antecedentes ou por resultado) e floresta com `race`. No pior caso (D4), o FPR dos afro-americanos vai de 32% para 99,9%.
-- No exemplo da seção 3, a acurácia dos afro-americanos fica em 67,5% antes e 67,4% depois, enquanto FNR e FPR se deslocam mais de 4 p.p. Só olhar a acurácia esconde o problema.
+- No exemplo da seção 3, a acurácia dos afro-americanos quase não muda (67,5% para 67,4%), mas FNR e FPR se deslocam mais de 4 p.p. Só olhar a acurácia esconde o problema.
 
 Os outros gráficos estão em [`docs/figures/`](docs/figures) e o notebook já traz os outputs salvos.
 
